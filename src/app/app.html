@@ -1,0 +1,18 @@
+<div id="app">
+  <b-container>
+    <b-row class="d-flex justify-content-center">
+      <b-col id="image" cols="12" lg="3"></b-col>
+    </b-row>
+    <b-row class="d-flex justify-content-center">
+      <b-col cols="4">{{ treeMap }}</b-col>
+      <b-col cols="2">
+        <b-form-input
+          type="number"
+          v-model="newNumber"
+          @keyup.enter="addNew"
+        ></b-form-input>
+      </b-col>
+      <b-col cols="1"><b-button @click="addNew">Add</b-button></b-col>
+    </b-row>
+  </b-container>
+</div>
